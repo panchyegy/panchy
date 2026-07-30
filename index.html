@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PANCHY | Fresh Taste Every Bite</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Cairo',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+
+background:#0d0d0d;
+
+color:white;
+
+overflow-x:hidden;
+
+}
+
+body::before{
+
+content:"";
+
+position:fixed;
+
+width:500px;
+
+height:500px;
+
+background:#ff7a0015;
+
+filter:blur(120px);
+
+top:-180px;
+
+left:-150px;
+
+z-index:-2;
+
+}
+
+body::after{
+
+content:"";
+
+position:fixed;
+
+width:350px;
+
+height:350px;
+
+background:#ff990015;
+
+filter:blur(100px);
+
+bottom:-120px;
+
+right:-100px;
+
+z-index:-2;
+
+}
+
+.hero{
+
+height:100vh;
+
+position:relative;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+text-align:center;
+
+overflow:hidden;
+
+}
+
+.hero img.bg{
+
+position:absolute;
+
+width:100%;
+
+height:100%;
+
+object-fit:cover;
+
+filter:brightness(.35);
+
+animation:zoom 12s infinite alternate;
+
+}
+
+@keyframes zoom{
+
+from{transform:scale(1);}
+
+to{transform:scale(1.08);}
+
+}
+
+.overlay{
+
+position:absolute;
+
+width:100%;
+
+height:100%;
+
+background:linear-gradient(to bottom,#00000060,#0d0d0d);
+
+}
+
+.content{
+
+position:relative;
+
+z-index:5;
+
+padding:20px;
+
+}
+
+.logo{
+
+width:140px;
+
+border-radius:50%;
+
+border:4px solid #ff7a00;
+
+box-shadow:0 0 35px #ff7a00;
+
+animation:fade 1.5s;
+
+}
+
+@keyframes fade{
+
+from{
+
+opacity:0;
+
+transform:translateY(-40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+h1{
+
+font-size:46px;
+
+font-weight:900;
+
+margin-top:20px;
+
+}
+
+p{
+
+margin-top:12px;
+
+color:#ddd;
+
+font-size:18px;
+
+}
+
+.scroll{
+
+margin-top:35px;
+
+font-size:30px;
+
+color:#ff7a00;
+
+animation:up 1.5s infinite;
+
+}
+
+@keyframes up{
+
+0%{transform:translateY(0);}
+
+50%{transform:translateY(10px);}
+
+100%{transform:translateY(0);}
+
+}
+
+section{
+
+padding:40px 20px;
+
+max-width:600px;
+
+margin:auto;
+
+}
+
+.title{
+
+text-align:center;
+
+font-size:28px;
+
+margin-bottom:20px;
+
+color:#ff7a00;
+
+}
+
+.card{
+
+background:#181818;
+
+border:1px solid #2d2d2d;
+
+padding:18px;
+
+border-radius:18px;
+
+margin-bottom:18px;
+
+transition:.3s;
+
+}
+
+.card:hover{
+
+transform:translateY(-6px);
+
+border-color:#ff7a00;
+
+}
+
+.btn{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+text-decoration:none;
+
+color:white;
+
+font-size:18px;
+
+font-weight:700;
+
+}
+
+.btn i{
+
+color:#ff7a00;
+
+font-size:24px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header class="hero">
+
+<img src="burger.jpg" class="bg">
+
+<div class="overlay"></div>
+
+<div class="content">
+
+<img src="logo.png" class="logo">
+
+<h1>PANCHY</h1>
+
+<p>Fresh Taste, Every Bite 🍔</p>
+
+<div class="scroll">
+
+<i class="fa-solid fa-angles-down"></i>
+
+</div>
+
+</div>
+
+</header>
+<section>
+
+<h2 class="title">اطلب بسهولة</h2>
+
+<div class="card">
+<a class="btn" href="menu.pdf" target="_blank">
+<span>📖 عرض المنيو</span>
+<i class="fa-solid fa-book-open"></i>
+</a>
+</div>
+
+<div class="card">
+<a class="btn" href="https://wa.me/201282860651">
+<span>💬 اطلب عبر واتساب</span>
+<i class="fa-brands fa-whatsapp"></i>
+</a>
+</div>
+
+<div class="card">
+<a class="btn" href="#offers">
+<span>🔥 عروض بانشي</span>
+<i class="fa-solid fa-fire"></i>
+</a>
+</div>
+
+</section>
+
+
+<section>
+
+<h2 class="title">📍 العنوان</h2>
+
+<div class="card" style="text-align:center">
+
+<h3 style="color:#ff7a00;margin-bottom:10px;">
+الزرقا
+</h3>
+
+<p style="font-size:20px">
+أمام هايبر أبو أيمن
+</p>
+
+</div>
+
+</section>
+
+
+<section id="offers">
+
+<h2 class="title">
+🔥 الأكثر طلبًا
+</h2>
+
+<div class="card">
+
+<h3>🍔 بانشي برجر</h3>
+
+<p>طعمه اللي يخليك ترجع تاني.</p>
+
+</div>
+
+<div class="card">
+
+<h3>🔥 فاير بانشي</h3>
+
+<p>صوص سبايسي لمحبي الطعم الحار.</p>
+
+</div>
+
+<div class="card">
+
+<h3>🥓 مشروم بيكون</h3>
+
+<p>مشروم طازج مع صوصات بانشي الخاصة.</p>
+
+</div>
+
+<div class="card">
+
+<h3>🍗 بانشي تشيكن</h3>
+
+<p>دجاج كريسبي مقرمش بطعم لا يقاوم.</p>
+
+</div>
+
+</section>
+<section>
+
+<h2 class="title">📸 من مطبخ بانشي</h2>
+
+<div class="gallery">
+
+<img src="food1.jpg">
+
+<img src="food2.jpg">
+
+<img src="food3.jpg">
+
+<img src="food4.jpg">
+
+</div>
+
+</section>
+
+<style>
+
+.gallery{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:15px;
+
+}
+
+.gallery img{
+
+width:100%;
+
+height:170px;
+
+object-fit:cover;
+
+border-radius:18px;
+
+transition:.4s;
+
+border:2px solid #2b2b2b;
+
+}
+
+.gallery img:hover{
+
+transform:scale(1.05);
+
+border-color:#ff7a00;
+
+box-shadow:0 0 20px #ff7a00;
+
+}
+
+.social{
+
+display:flex;
+
+justify-content:center;
+
+gap:18px;
+
+margin-top:20px;
+
+}
+
+.social a{
+
+width:65px;
+
+height:65px;
+
+border-radius:50%;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+background:#181818;
+
+color:white;
+
+font-size:28px;
+
+text-decoration:none;
+
+transition:.3s;
+
+border:2px solid #2c2c2c;
+
+}
+
+.social a:hover{
+
+background:#ff7a00;
+
+transform:translateY(-8px);
+
+}
+
+.call{
+
+margin-top:25px;
+
+display:flex;
+
+justify-content:center;
+
+}
+
+.call a{
+
+background:#ff7a00;
+
+padding:18px 35px;
+
+border-radius:50px;
+
+text-decoration:none;
+
+font-size:20px;
+
+font-weight:700;
+
+color:white;
+
+box-shadow:0 0 20px #ff7a00;
+
+}
+
+.whatsapp{
+
+position:fixed;
+
+bottom:20px;
+
+left:20px;
+
+width:65px;
+
+height:65px;
+
+background:#25D366;
+
+border-radius:50%;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:34px;
+
+color:white;
+
+text-decoration:none;
+
+box-shadow:0 0 25px rgba(37,211,102,.6);
+
+z-index:999;
+
+animation:float 2s infinite;
+
+}
+
+@keyframes float{
+
+0%{transform:translateY(0);}
+
+50%{transform:translateY(-8px);}
+
+100%{transform:translateY(0);}
+
+}
+
+footer{
+
+padding:40px 20px;
+
+text-align:center;
+
+color:#bfbfbf;
+
+margin-top:40px;
+
+border-top:1px solid #333;
+
+}
+
+footer h2{
+
+color:#ff7a00;
+
+margin-bottom:15px;
+
+}
+
+</style>
+
+<section>
+
+<h2 class="title">
+
+تابعنا
+
+</h2>
+
+<div class="social">
+
+<a href="https://www.instagram.com/panchyrestaurant?igsh=bnZkNDVkYWo5eGd4&utm_source=qr" target="_blank">
+
+<i class="fab fa-instagram"></i>
+
+</a>
+
+<a href="https://www.facebook.com/share/1Bd12LyGFH/?mibextid=wwXIfr" target="_blank">
+
+<i class="fab fa-facebook-f"></i>
+
+</a>
+
+<a href="https://www.tiktok.com/@panchyrestaurant?_r=1&_t=ZS-97T3B0jeXiL" target="_blank">
+
+<i class="fab fa-tiktok"></i>
+
+</a>
+
+</div>
+
+<div class="call">
+
+<a href="tel:01282860651">
+
+📞 01282860651
+
+</a>
+
+</div>
+
+</section>
+
+<a class="whatsapp" href="https://wa.me/201282860651">
+
+<i class="fab fa-whatsapp"></i>
+
+</a>
+
+<footer>
+
+<h2>PANCHY</h2>
+
+<p>Fresh Taste, Every Bite 🍔</p>
+
+<br>
+
+<p>📍 الزرقا - أمام هايبر أبو أيمن</p>
+
+<br>
+
+<p>© 2026 PANCHY Restaurant</p>
+
+</footer>
+
+</body>
+
+</html>
